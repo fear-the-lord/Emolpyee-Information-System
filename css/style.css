@@ -19,22 +19,10 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
-/* input[type=date]::-webkit-datetime-edit-text {
-    -webkit-appearance: none;
-    display: none;
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
 }
-input[type=date]::-webkit-datetime-edit-month-field{
-    -webkit-appearance: none;
-    display: none;
-}
-input[type=date]::-webkit-datetime-edit-day-field {
-    -webkit-appearance: none;
-    display: none;
-}
-input[type=date]::-webkit-datetime-edit-year-field {
-    -webkit-appearance: none;
-    display: none;
-} */
 html {
   line-height: 1;
 }
