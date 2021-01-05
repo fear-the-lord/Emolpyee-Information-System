@@ -1,0 +1,47 @@
+1. Create Employee Table 
+
+CREATE TABLE `eis`.`employee` ( `Emp_Id` INT(10) NOT NULL , `Emp_Name` VARCHAR(50) NOT NULL , `Emp_Dept_Id` INT(2) NOT NULL , `Emp_Sex` INT(1) NOT NULL , `Emp_Marital_Status` INT(1) NOT NULL , `Emp_Join_Date` DATE NOT NULL , `Emp_Birth_Date` DATE NOT NULL , `Emp_Age` INT(3) NOT NULL , `Emp_Education_Id` INT(2) NOT NULL , `Emp_Designation_Id` INT(2) NOT NULL , `Emp_Salary` DECIMAL(10,2) NOT NULL , `Emp_Location_Id` INT(4) NOT NULL , `Emp_Active_Status` INT(1) NOT NULL , PRIMARY KEY (`Emp_Id`)) ENGINE = InnoDB;
+
+2. Create Address Table
+
+CREATE TABLE `eis`.`address` ( `Address_Id` INT(4) NOT NULL , `Emp_Id` INT(10) NOT NULL , `Address1` VARCHAR(50) NOT NULL , `Address2` VARCHAR(50) NULL , `Tel_No` VARCHAR(50) NOT NULL , `Address_Type` INT(1) NOT NULL , PRIMARY KEY (`Address_Id`, `Emp_Id`)) ENGINE = InnoDB;
+
+3. Create Family_Details Table
+
+CREATE TABLE `eis`.`family_details` ( `Family_Id` INT(4) NOT NULL , `Emp_Id` INT(10) NOT NULL , `Emp_Relation_Id` INT(2) NOT NULL , `Relation_Name` VARCHAR(50) NOT NULL , `Relation_Age` INT(3) NOT NULL , `Nominee` INT(1) NOT NULL , PRIMARY KEY (`Family_Id`, `Emp_Id`)) ENGINE = InnoDB;
+
+4. Create Account_Details Table 
+
+CREATE TABLE `eis`.`account_details` ( `Emp_Id` INT(10) NOT NULL , `Account_No` INT(10) NOT NULL , `Bank_Id` INT(2) NOT NULL , `Account_Type` INT(3) NOT NULL , PRIMARY KEY (`Emp_Id`, `Account_No`)) ENGINE = InnoDB;
+
+5. Create Department_Master Table 
+
+CREATE TABLE `eis`.`department_master` ( `Dept_Id` INT(2) NOT NULL , `Dept_Name` INT(50) NOT NULL , PRIMARY KEY (`Dept_Id`)) ENGINE = InnoDB;
+
+6. Create Region_Master Table 
+
+CREATE TABLE `eis`.`region_master` ( `Region_Id` INT(2) NOT NULL , `Region_Name` INT(50) NOT NULL , `Region_Status` INT(1) NOT NULL , PRIMARY KEY (`Region_Id`)) ENGINE = InnoDB;
+
+7. Create Country_Master Table
+
+CREATE TABLE `eis`.`country_master` ( `Country_Id` INT(4) NOT NULL , `Country_Name` INT(50) NOT NULL , PRIMARY KEY (`Country_Id`)) ENGINE = InnoDB;
+
+8. Create Company_Location Table
+
+CREATE TABLE `eis`.`company_location` ( `Location_Id` INT(4) NOT NULL , `Region_Id` INT(2) NOT NULL , `Country_Id` INT(4) NOT NULL , PRIMARY KEY (`Location_Id`)) ENGINE = InnoDB;
+
+9. Create Designation_Master Table 
+
+CREATE TABLE `eis`.`designation_master` ( `Designation_Id` INT(4) NOT NULL , `Designation_Desc` VARCHAR(50) NOT NULL , PRIMARY KEY (`Designation_Id`)) ENGINE = InnoDB;
+
+10. Create Education_Master Table 
+
+CREATE TABLE `eis`.`education_master` ( `Education_Id` INT(2) NOT NULL , `Education_Desc` VARCHAR(50) NOT NULL , PRIMARY KEY (`Education_Id`)) ENGINE = InnoDB;
+
+11. Create Relation_Master Table 
+
+CREATE TABLE `eis`.`relation_master` ( `Relation_Id` INT(2) NOT NULL , `Relation_Desc` VARCHAR(50) NOT NULL , PRIMARY KEY (`Relation_Id`)) ENGINE = InnoDB;
+
+12. Create Bank_Master Table
+
+CREATE TABLE `eis`.`bank_master` ( `Bank_Id` INT(2) NOT NULL , `Bank_Name` VARCHAR(50) NOT NULL , PRIMARY KEY (`Bank_Id`)) ENGINE = InnoDB;
