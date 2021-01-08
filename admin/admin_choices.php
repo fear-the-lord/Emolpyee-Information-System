@@ -20,7 +20,7 @@
         <a href="education_master.php" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Education Master</a><br>
         <a href="relation_master.php" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Relation Master</a><br>
         <a href="bank_master.php" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Bank Master</a><br>
-        <a href="../index.html" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Back To Home Page</a><br>
+        <a href="../index.php" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Back To Home Page</a><br>
     </form>  
       
     <script src="../js/main.js"></script>

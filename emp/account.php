@@ -51,7 +51,7 @@
     
         <button class="btn" type="submit">Submit</button>
         <button class="btn" id="clear" type="reset" value="Reset">Clear</button>
-        <a href="../index.html" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Back To Home Page</a>
+        <a href="../index.php" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Back To Home Page</a>
     </form>  
 </body>
 </html>
