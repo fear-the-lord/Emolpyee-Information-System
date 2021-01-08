@@ -11,7 +11,7 @@
     if($stmt) {
       mysqli_stmt_bind_param($stmt, "sss", $location_id, $region_id, $country_id);
       mysqli_stmt_execute($stmt);
-      header("location: admin_choices.html");
+      header("location: admin_choices.php");
     }
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
@@ -46,7 +46,7 @@
         </div>
     
         <button class="btn" type="submit">Submit</button><br>
-        <a href="admin_choices.html" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Back</a><br>
+        <a href="admin_choices.php" style = "text-decoration: none;  font-size: 18px; color: #2ecc71; text-align: center; font-weight: bold;" class = "btn">Back</a><br>
         <button class="btn" id="clear" type="reset" value="Reset">Clear</button>
     </form>  
 </body>
